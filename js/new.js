@@ -63,7 +63,7 @@ let x = "";
 discount.forEach(e => {
     x += `
                 
-                <div class="row row-cols-1 row-cols-md-2 g-4 pt-4 d-flex justify-content-center" style="width: 100% !important;">
+            <div class="row row-cols-1 row-cols-md-2 g-4 pt-4 d-flex justify-content-center" style="width: 100% !important;">
                 <div class="col">
                 <div class="card">
                     <img src="${e.cImage}" class="card-img-top" alt="...">
@@ -75,7 +75,21 @@ discount.forEach(e => {
                     <button type="button" class="btn btn-primary">Buy Now</button>
                 </div>
                 </div>
+
+                <div class="col">
+                <div class="card">
+                    <img src="${e.cImage}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">${e.cName}</h5>
+                    <p class="card-text">${e.cModel}</p>
+                    ${e.cPrice}
+                    </div>
+                    <button type="button" class="btn btn-primary">Buy Now</button>
+                </div>
+                </div>
+
             </div>
+
             `
     console.log(e)
     discountgallery.innerHTML = x
