@@ -63,8 +63,8 @@ let x = "";
 discount.forEach(e => {
     x += `
                 
-                <div class="row row-cols-1 row-cols-md-2 g-4 px-5 pt-4 d-flex justify-content-center">
-                <div class="col-md-6 col-sm-12 col-lg-6">
+                <div class="row row-cols-1 row-cols-md-2 g-4 pt-4 d-flex justify-content-center" style="width: 100% !important;">
+                <div class="col">
                 <div class="card">
                     <img src="${e.cImage}" class="card-img-top" alt="...">
                     <div class="card-body">
